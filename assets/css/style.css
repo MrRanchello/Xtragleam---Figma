@@ -1,0 +1,305 @@
+  :root{
+    --pink-bg: #fbeef4;
+    --pink-bg-2: #f9e3ee;
+    --ink: #1c1c1c;
+    --gray: #6b6b6b;
+    --pill-border: #dcdcdc;
+    --accent: #e94f9c;
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+  }
+
+  .site{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 32px;
+  }
+
+  /* ===== Header ===== */
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .logo{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  .logo span{ font-weight: 300; }
+
+  nav.main-nav{
+    display: flex;
+    gap: 28px;
+    font-size: 15px;
+    color: #333;
+  }
+  nav.main-nav a{
+    text-decoration: none;
+    color: inherit;
+  }
+  nav.main-nav a.active{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
+  .header-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .icon-btn{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+  }
+
+  .menu-btn{
+    display: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  /* ===== Category pills row ===== */
+  .pill-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .pills{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .pill{
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid var(--pill-border);
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+    background: #fff;
+  }
+  .pill.active{
+    border-color: #bbb;
+    background: #f7f7f7;
+    color: #111;
+  }
+  .search-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #444;
+    font-size: 15px;
+  }
+
+  /* ===== Hero ===== */
+  .hero{
+    margin-top: 24px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    align-items: center;
+    min-height: 420px;
+    overflow: visible;
+  }
+
+  .hero-bg{
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--pink-bg), var(--pink-bg-2));
+    z-index: 0;
+  }
+
+  .hero-watermark{
+    position: absolute;
+    left: -40px;
+    bottom: -60px;
+    font-size: 240px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.5);
+    z-index: 0;
+    user-select: none;
+    line-height: 1;
+  }
+
+  .hero-text{
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px 40px 56px;
+  }
+
+  .hero-text h1{
+    font-size: 44px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+  }
+  .hero-text h1 .arrow{
+    font-size: 30px;
+    vertical-align: middle;
+  }
+
+  .hero-text p{
+    font-size: 15px;
+    color: #555;
+    max-width: 360px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+  }
+
+  .shop-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #1c1c1c;
+    color: #fff;
+    padding: 14px 22px;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+  }
+  .shop-btn .circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #fff;
+    color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  /* ===== Hero product image mock ===== */
+  .hero-products{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+
+  .hero-product-img{
+    display: block;
+    filter: drop-shadow(0 12px 18px rgba(0,0,0,0.12));
+  }
+
+  .hero-product-bottle{
+    width: 34%;
+    max-width: 190px;
+    z-index: 1;
+  }
+
+  .hero-product-oil{
+    width: 24%;
+    max-width: 130px;
+    z-index: 2;
+    margin-bottom: 10%;
+  }
+
+  .hero-product-jar{
+    width: 30%;
+    max-width: 170px;
+    z-index: 3;
+    margin-left: -10%;
+  }
+
+  @media (max-width: 800px){
+    .hero{ grid-template-columns: 1fr; }
+    .hero-text{ padding: 32px 20px; }
+    .hero-text h1{ font-size: 32px; }
+    .hero-products{ padding-bottom: 20px; }
+    nav.main-nav{ order: 3; width: 100%; justify-content: center; }
+  }
+
+  /* ===== Мобильная версия — как на скриншоте ===== */
+  @media (max-width: 480px){
+    .site{ padding: 18px 18px; }
+
+    nav.main-nav,
+    .header-icons,
+    .pill-row{
+      display: none;
+    }
+
+    .menu-btn{ display: flex; }
+
+    .logo{ font-size: 19px; }
+
+    .hero{
+      margin-top: 20px;
+      border-radius: 18px;
+      min-height: 0;
+      display: block;
+      padding-bottom: 60px;
+    }
+
+    .hero-watermark{
+      font-size: 150px;
+      left: -20px;
+      bottom: -40px;
+    }
+
+    .hero-products{ display: none; }
+
+    .hero-text{
+      padding: 28px 18px 0 18px;
+    }
+
+    .hero-text h1{
+      font-size: 34px;
+      font-weight: 600;
+    }
+    .hero-text h1 .arrow{
+      display: none;
+    }
+
+    .hero-text p{
+      max-width: 100%;
+      font-size: 14px;
+    }
+
+    .shop-btn{
+      width: 100%;
+      justify-content: center;
+      padding: 15px 22px;
+    }
+  }
