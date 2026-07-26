@@ -1,3 +1,5 @@
+  /* Main Section */
+  
   :root{
     --pink-bg: #fbeef4;
     --pink-bg-2: #f9e3ee;
@@ -22,7 +24,6 @@
     padding: 24px 32px;
   }
 
-  /* ===== Header ===== */
   header{
     display: flex;
     align-items: center;
@@ -84,7 +85,6 @@
     cursor: pointer;
   }
 
-  /* ===== Category pills row ===== */
   .pill-row{
     display: flex;
     align-items: center;
@@ -123,7 +123,6 @@
     font-size: 15px;
   }
 
-  /* ===== Hero ===== */
   .hero{
     margin-top: 24px;
     position: relative;
@@ -139,17 +138,17 @@
     inset: 0;
     border-radius: 20px;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--pink-bg), var(--pink-bg-2));
+    background-color: #FFF6FD;
     z-index: 0;
   }
 
   .hero-watermark{
     position: absolute;
-    left: -40px;
-    bottom: -60px;
+    left: 150px;
+    top: 250px;
     font-size: 240px;
     font-weight: 700;
-    color: rgba(255,255,255,0.5);
+    color: #f9e3ee;
     z-index: 0;
     user-select: none;
     line-height: 1;
@@ -204,7 +203,6 @@
     font-size: 13px;
   }
 
-  /* ===== Hero product image mock ===== */
   .hero-products{
     position: relative;
     z-index: 1;
@@ -268,6 +266,17 @@
     top: 25px;
   }
 
+  .main-section-text {
+    position: relative;
+    bottom: 20px;
+    left: 173px;
+  }
+
+  /* /Main Section */
+
+
+  /* Responsive */
+
   @media (max-width: 800px){
     .hero{ grid-template-columns: 1fr; }
     .hero-text{ padding: 32px 20px; }
@@ -276,7 +285,6 @@
     nav.main-nav{ order: 3; width: 100%; justify-content: center; }
   }
 
-  /* ===== Мобильная версия — как на скриншоте ===== */
   @media (max-width: 480px){
     .site{ padding: 18px 18px; }
 
@@ -329,3 +337,5 @@
       padding: 15px 22px;
     }
   }
+
+  /* /Responsive */
