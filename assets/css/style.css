@@ -7,17 +7,30 @@
     --gray: #6b6b6b;
     --pill-border: #dcdcdc;
     --accent: #e94f9c;
+    --bg: #F6F5F2;
+    --card-bg: #FFFFFF;
+    --card-border: #E7E4DD;
+    --text-dark: #1E1B16;
+    --text-muted: #6B6660;
+    --accent: #C96A43;
+    --shadow: 0 1px 2px rgba(20, 17, 12, 0.04), 0 8px 24px rgba(20, 17, 12, 0.06);
   }
 
   * {
     box-sizing: border-box;
-  }
 
+    margin: 0;
+    padding: 0;
+  }
+  html,
   body {
+    overflow-x: hidden;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     color: var(--ink);
     background: #fff;
+    color: var(--text-dark);
+    padding: 60px 0;
   }
 
   .site {
@@ -390,7 +403,7 @@
 
   .choose {
     padding: 80px 0;
-    
+
   }
 
   .choose h2 {
@@ -544,28 +557,32 @@
 
   /*section*/
 
-  
+
   /* market section */
-   .section-header {
+  .section-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 24px;
   }
+
   .section-header h2 {
     font-size: 28px;
     font-weight: 600;
   }
+
   .section-header a {
     font-size: 14px;
     color: #1a1a1a;
     text-decoration: underline;
   }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
   .card {
     background: #f2f2f2;
     border-radius: 6px;
@@ -574,18 +591,21 @@
     display: flex;
     flex-direction: column;
   }
+
   .badge {
     font-size: 12px;
     font-weight: 600;
     color: #1a1a1a;
     margin-bottom: 4px;
   }
+
   .stars {
     color: #f5a623;
     font-size: 13px;
     letter-spacing: 1px;
     margin-bottom: 12px;
   }
+
   .heart {
     position: absolute;
     top: 16px;
@@ -599,8 +619,9 @@
     justify-content: center;
     font-size: 13px;
     color: #555;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
+
   .product-image {
     height: 140px;
     display: flex;
@@ -608,31 +629,38 @@
     justify-content: center;
     margin-bottom: 16px;
   }
+
   .product-image svg {
     max-height: 100%;
   }
+
   .product-name {
     font-size: 13px;
     color: #1a1a1a;
     margin-bottom: 6px;
   }
+
   .price-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .price {
     font-size: 12px;
   }
+
   .price .old {
     text-decoration: line-through;
     color: #999;
     margin-right: 6px;
   }
+
   .price .new {
     color: #1a1a1a;
     font-weight: 600;
   }
+
   .add-btn {
     background: #1a1a1a;
     color: #fff;
@@ -646,7 +674,158 @@
     cursor: pointer;
     white-space: nowrap;
   }
+
   @media (max-width: 800px) {
-    .grid { grid-template-columns: 1fr; }
+    .grid {
+      grid-template-columns: 1fr;
+    }
   }
+
   /* market section */
+
+  /* tesmioal */
+
+  .wrap {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 402.83px;
+    flex: none;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 18.42px;
+    padding: 36.84px 20px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .col-1 .card-1 {
+    height: 349.78px;
+  }
+
+  .col-1 .card-2 {
+    height: 459.49px;
+  }
+
+  .col-2 .card-1 {
+    height: 422.49px;
+  }
+
+  .col-2 .card-2 {
+    height: 386.78px;
+  }
+
+  .col-3 .card-1 {
+    height: 459.49px;
+  }
+
+  .col-3 .card-2 {
+    height: 348.49px;
+  }
+
+  .card .icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    flex: none;
+  }
+
+  .ico {
+    text-align: center;
+  }
+
+  .card .h3 {
+    font-weight: 300;
+    line-height: 150%;
+  }
+
+
+
+  /* ===== Responsive: kartochkalar bir xil o'lchamga tushib, qator-qator bo'lib tursin ===== */
+  @media (max-width: 1024px) {
+    .grid {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .col {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .card,
+    .col-1 .card-1,
+    .col-1 .card-2,
+    .col-2 .card-1,
+    .col-2 .card-2,
+    .col-3 .card-1,
+    .col-3 .card-2 {
+      width: 304.79px;
+      height: 259.84px;
+      border-radius: 13.94px;
+      padding: 27.87px 15.13px;
+    }
+  }
+
+  @media (max-width: 372px) {
+    .col {
+      justify-content: center;
+    }
+
+    .card,
+    .col-1 .card-1,
+    .col-1 .card-2,
+    .col-2 .card-1,
+    .col-2 .card-2,
+    .col-3 .card-1,
+    .col-3 .card-2 {
+      width: 100%;
+      max-width: 304.79px;
+    }
+
+    .card h3 {
+      font-size: 13px;
+      line-height: 17px;
+    }
+
+    .card h4 {
+      font-size: 18px;
+    }
+
+    .ico img {
+      width: 40px;
+      height: 40px;
+    }
+
+  }
+
+  /* tesmioal */
