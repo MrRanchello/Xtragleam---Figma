@@ -277,6 +277,7 @@
     position: relative;
     bottom: 20px;
     left: 173px;
+    display: inline-block;
   }
 
   /* /Main Section */
@@ -309,6 +310,12 @@
   }
 
   @media (max-width: 480px) {
+
+    .main-section-text {
+      left: -1px;
+      position: relative;
+    }
+
     .site {
       padding: 18px 18px;
     }
