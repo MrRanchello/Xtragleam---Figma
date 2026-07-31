@@ -24,12 +24,12 @@
 
   body {
     overflow-x: hidden;
-    margin: 0;
+    /* margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     color: var(--ink);
     background: #fff;
     color: var(--text-dark);
-    padding: 60px 0;
+    padding: 60px 0; */
   }
 
   .site {
@@ -682,149 +682,4 @@
 
   /* market section */
 
-  /* tesmioal */
-
-  .wrap {
-    width: 1280px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
-  .grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .col {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 402.83px;
-    flex: none;
-  }
-
-  .card {
-    width: 100%;
-    border-radius: 18.42px;
-    padding: 36.84px 20px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: var(--shadow);
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .col-1 .card-1 {
-    height: 349.78px;
-  }
-
-  .col-1 .card-2 {
-    height: 459.49px;
-  }
-
-  .col-2 .card-1 {
-    height: 422.49px;
-  }
-
-  .col-2 .card-2 {
-    height: 386.78px;
-  }
-
-  .col-3 .card-1 {
-    height: 459.49px;
-  }
-
-  .col-3 .card-2 {
-    height: 348.49px;
-  }
-
-  .card .icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    flex: none;
-  }
-
-  .ico {
-    text-align: center;
-  }
-
-  .card .h3 {
-    font-weight: 300;
-    line-height: 150%;
-  }
-
-
-
-  /* ===== Responsive: kartochkalar bir xil o'lchamga tushib, qator-qator bo'lib tursin ===== */
-  @media (max-width: 1024px) {
-    .grid {
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .col {
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .card,
-    .col-1 .card-1,
-    .col-1 .card-2,
-    .col-2 .card-1,
-    .col-2 .card-2,
-    .col-3 .card-1,
-    .col-3 .card-2 {
-      width: 304.79px;
-      height: 259.84px;
-      border-radius: 13.94px;
-      padding: 27.87px 15.13px;
-    }
-  }
-
-  @media (max-width: 372px) {
-    .col {
-      justify-content: center;
-    }
-
-    .card,
-    .col-1 .card-1,
-    .col-1 .card-2,
-    .col-2 .card-1,
-    .col-2 .card-2,
-    .col-3 .card-1,
-    .col-3 .card-2 {
-      width: 100%;
-      max-width: 304.79px;
-    }
-
-    .card h3 {
-      font-size: 13px;
-      line-height: 17px;
-    }
-
-    .card h4 {
-      font-size: 18px;
-    }
-
-    .ico img {
-      width: 40px;
-      height: 40px;
-    }
-
-  }
-
-  /* tesmioal */
+ 
