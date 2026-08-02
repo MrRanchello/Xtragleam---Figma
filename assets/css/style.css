@@ -1,3 +1,17 @@
+   /* Fonts */
+
+  @font-face {
+    font-family: 'main';
+    src: url('/assets/fonts/AeonikTRIAL-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  /* /Fonts */
+
+
   /* Main Section */
 
   :root {
@@ -24,12 +38,27 @@
 
   body {
     overflow-x: hidden;
+<<<<<<< HEAD
+    font-family: 'main';
+    color: var(--ink);
+    background: #fff;
+    color: var(--text-dark);
+  }
+
+  a.disabled {
+    color: #888888 !important;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    opacity: 0.6;
+=======
     /* margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     color: var(--ink);
     background: #fff;
     color: var(--text-dark);
     padding: 60px 0; */
+>>>>>>> 0f32c46fe6af01cba851954cce4048c86adfdd57
   }
 
   .site {
@@ -121,9 +150,10 @@
   }
 
   .pill {
+    font-family: 'main';
     padding: 8px 18px;
     border-radius: 5px;
-    font-size: 14px;
+    border: none;
     color: #393535;
     cursor: pointer;
     background: #EFEFEF;
@@ -205,9 +235,9 @@
     color: #fff;
     padding: 14px 22px;
     border-radius: 30px;
-    font-size: 15px;
     cursor: pointer;
     border: none;
+    font-family: 'main';
   }
 
   .shop-btn .circle {
@@ -219,7 +249,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
   }
 
   .hero-products {
@@ -260,29 +289,30 @@
   }
 
   .img-1 {
-    width: 34%;
-    max-width: 190px;
+    width: 250px;
+    height: 99%;
     z-index: 1;
     position: relative;
-    left: 100px;
+    left: 167px;
     top: 25px;
   }
 
   .img-2 {
     width: 24%;
-    max-width: 130px;
     z-index: 2;
+    height: 99%;
     position: relative;
     left: 45px;
     top: 25px;
   }
 
   .img-3 {
-    width: 30%;
-    max-width: 170px;
+    width: 300px;
+    height: 50%;
     z-index: 3;
     position: relative;
     top: 25px;
+    left: -48px;
   }
 
   .main-section-text {
